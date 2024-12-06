@@ -29,6 +29,7 @@ The file format is a JSON Schema with our extensions.
     // Properties in output reference Actor run's default storages,
     // or live view / Standby mode server.
      
+     // TODO: Make the variables consisten with memory settings in actor.json
     "currentProducts": {
       // We extend JSON Schema "type" with the new ones, all prefixed with '$':
       "type": "$dataset",

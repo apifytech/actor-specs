@@ -33,6 +33,11 @@ The file has the following structure:
   "minMemoryMbytes": 128,
   "maxMemoryMbytes": 4096,
   
+  // Used when user doesn't specify memory, the 𝔸ctor run will start with this amount.
+  // It might be a basic arithemtic expression referencing ${variables} from Actor input.
+  // This right value can optimize user experience vs. compute costs.
+  "defaultMemoryMbytes": "${maxCrawlPages} * 256 + 128",
+  
   // Links to other Actor defintion files
   "dockerfile": "./Dockerfile", // If omitted, the system looks for "./Dockerfile" and "../Dockerfile"
   "readme": "./README.md", // If omitted, the system looks for "./ACTOR.md" and "../README.md"
